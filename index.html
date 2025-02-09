@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKjPrPphmzh3UO6jOSGJVL1n3lP6L6gVRN6j+k3eC+LyzwjhrHxpY9B67HZhb2P0mE9GgWUzc6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Developer portfolio showcasing projects, skills, and contact information.">
+  <title>Developer Portfolio - Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Font Awesome and GSAP are loaded via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" 
+    integrity="sha512-H6cPm97FAsgIKjPrPphmzh3UO6jOSGJVL1n3lP6L6gVRN6j+k3eC+LyzwjhrHxpY9B67HZhb2P0mE9GgWUzc6g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body data-theme="light">
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
+      </ul>
+    </nav>
+  </header>
+  <main>
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Full Stack Developer</h1>
-            <p>Building digital experiences that matter</p>
-        </div>
+      <div class="hero-content">
+        <h1>Full Stack Developer</h1>
+        <p>Building digital experiences that matter</p>
+      </div>
     </section>
-
     <section id="projects" class="section">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <!-- Project cards will be populated via JavaScript -->
-        </div>
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project cards will be populated via JavaScript -->
+      </div>
     </section>
-
-    <section id="skills" class="section" style="background-color: var(--card-bg);">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <!-- Skills will be populated via JavaScript -->
-        </div>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <!-- Skills will be populated via JavaScript -->
+      </div>
     </section>
-
-    <section id="about" class="section" style="background-color: var(--background-color);">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>
-                A passionate full-stack developer with a knack for creating user-friendly and efficient web applications. 
-                Experienced in front-end technologies like React, Angular, and Vue.js, and back-end technologies such as Node.js, Python, and Java. 
-                Always eager to learn new technologies and frameworks to stay at the forefront of web development.
-            </p>
-        </div>
+    <section id="about-section" class="section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          A passionate full-stack developer with a knack for creating user-friendly and efficient web applications. 
+          Experienced in front-end technologies like React, Angular, and Vue.js, and back-end technologies such as Node.js, Python, and Java. 
+          Always eager to learn new technologies and frameworks to stay at the forefront of web development.
+        </p>
+      </div>
     </section>
-
-    <section id="contact" class="section" style="background-color: var(--card-bg);">
-        <h2>Contact</h2>
-        <div class="contact-content">
-            <p><i class="fas fa-envelope"></i> Email: example@email.com</p>
-            <p><i class="fab fa-linkedin"></i> LinkedIn: linkedin.com/in/example</p>
-            <p><i class="fab fa-github"></i> GitHub: github.com/example</p>
-        </div>
+    <section id="contact-section" class="section">
+      <h2>Contact</h2>
+      <div class="contact-content">
+        <p><i class="fas fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:example@email.com">
+          example@email.com</a></p>
+        <p><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn: <a href="https://linkedin.com/in/example" target="_blank" rel="noopener">
+          linkedin.com/in/example</a></p>
+        <p><i class="fab fa-github" aria-hidden="true"></i> GitHub: <a href="https://github.com/example" target="_blank" rel="noopener">
+          github.com/example</a></p>
+      </div>
     </section>
-
-    <script src="script.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
